@@ -16,7 +16,7 @@ export default async function TicketList() {
 	return (
 		<>
 			{tickets.map((ticket) => (
-				<div key={ticket.id} className="card my-11 ">
+				<div key={ticket.id} className="card my-5 ">
 					<Link href={`/tickets/${ticket.id}`}>
 						<h3>{ticket.title}</h3>
 						<p>{ticket.body.slice(0, 200)}...</p>
